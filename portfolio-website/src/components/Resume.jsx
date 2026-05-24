@@ -59,7 +59,7 @@ const Resume = () => {
 
       {/* DOWNLOAD BUTTON */}
 
-      <a href="/resume.pdf" download>
+      <a href="/Adhl Muhammed cv.pdf" download>
         <button className="btn">
           Download Resume
         </button>

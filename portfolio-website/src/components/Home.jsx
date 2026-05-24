@@ -45,8 +45,10 @@ const Home = () => {
   React, Node.js, SQL, and modern web applications.
 </p>
 
-       <button className="btn">
-       View Projects
+      <button onClick={() => {
+         document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })
+        }} className="btn">
+           View Projects
       </button>
 
         <div className="stats">

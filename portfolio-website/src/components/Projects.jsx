@@ -98,7 +98,7 @@ const Projects = () => {
           <div className="project-links">
 
             <a
-              href="https://your-project.vercel.app"
+              href="https://adhl-portfolio-website.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >

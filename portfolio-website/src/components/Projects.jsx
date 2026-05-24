@@ -97,11 +97,19 @@ const Projects = () => {
 
           <div className="project-links">
 
-            <a href="adhl-portfolio-website.vercel.app">
+            <a
+              href="https://your-project.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo
             </a>
 
-            <a href="#https://github.com/aadhlmuhammedt-lang">
+            <a
+              href="https://github.com/aadhlmuhammedt-lang/Adhl-portfolio-website"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
 

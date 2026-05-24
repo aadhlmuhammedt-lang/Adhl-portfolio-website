@@ -97,7 +97,7 @@ const Projects = () => {
 
           <div className="project-links">
 
-            <a href="#adhl-portfolio-website.vercel.app">
+            <a href="adhl-portfolio-website.vercel.app">
               Live Demo
             </a>
 

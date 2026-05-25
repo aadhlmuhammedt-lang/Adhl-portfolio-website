@@ -8,10 +8,16 @@
   scroll-behavior:smooth;
 }
 
+img{
+  max-width:100%;
+}
+
+html,
 body{
+  width:100%;
+  overflow-x:hidden;
   background:#050505;
   color:#fff;
-  overflow-x:hidden;
 }
 
 .stats{
@@ -133,7 +139,7 @@ body::after{
 }
 
 .section-title{
-  font-size:70px;
+  font-size:clamp(38px, 7vw, 70px);
   margin-bottom:60px;
   text-transform:uppercase;
   letter-spacing:3px;
@@ -211,7 +217,7 @@ body::after{
 /* TITLE */
 
 .hero-title{
-  font-size:90px;
+  font-size:clamp(42px, 8vw, 90px);
   font-weight:700;
   line-height:1;
   text-transform:uppercase;
@@ -249,7 +255,6 @@ body::after{
   background:transparent;
   color:#fff;
   cursor:pointer;
-  transition:0.3s;
   font-size:16px;
   transition:0.3s ease;
 }
@@ -258,21 +263,6 @@ body::after{
   background:#fff;
   color:#000;
   transform:translateY(-3px);
-}
-
-/* PROJECT CARD */
-
-.project-card{
-  margin-top:30px;
-  width:320px;
-  padding:25px;
-  border:1px solid #fff;
-  transition:0.3s;
-}
-
-.project-card:hover{
-  transform:translateY(-10px);
-  background:#111;
 }
 
 /* CONTACT */
@@ -631,23 +621,69 @@ body::after{
   .navbar{
     flex-direction:column;
     gap:20px;
+    padding:20px;
   }
 
   .navbar ul{
     flex-wrap:wrap;
     justify-content:center;
+    gap:18px;
+  }
+
+  .section{
+    padding:80px 20px;
   }
 
   .hero-title{
-    font-size:50px;
+    text-align:center;
+    letter-spacing:1px;
   }
 
   .hero-sub{
     font-size:16px;
+    text-align:center;
+    line-height:1.7;
   }
 
   .profile-img{
-    width:240px;
-    height:320px;
+    width:230px;
+    height:300px;
   }
+
+  .stats{
+    gap:40px;
+    margin-top:50px;
+  }
+
+  .stats h1{
+    font-size:45px;
+  }
+
+  .about-container{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .about-cards{
+    grid-template-columns:1fr;
+  }
+
+  .projects-container{
+    grid-template-columns:1fr;
+  }
+
+  .resume-container{
+    grid-template-columns:1fr;
+  }
+
+  .contact-container{
+    grid-template-columns:1fr;
+  }
+
+  .floating-icons{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+  }
+
 }
